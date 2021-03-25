@@ -1,0 +1,25 @@
+#type-list,
+#pokemon-list {
+  max-height: 89vh;
+  overflow-y: scroll;
+}
+
+.card-header {
+  background: black;
+}
+
+.card-title {
+  color: red;
+}
+
+.pokemon {
+  margin: auto;
+}
+
+.col-md-8 {
+  margin-left: 10em;
+}
+
+#dropdownMenuButton-2 {
+  margin-left: 6em;
+}

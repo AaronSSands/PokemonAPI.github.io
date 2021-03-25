@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <!-- Site CSS -->
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body class="container-fluid">
+      <header> <img src="./assets/pokemon.jfif" class="pokemon" alt="..."> </header>
+        <div class="row mt-3">
+            <!--Pokemon Types-->
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-1" data-bs-toggle="dropdown" aria-expanded="false">
+                Type
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="type">
+              </ul>
+            </div>
+
+            <br>
+
+            <!--Pokemon-->
+            <div class="dropdown-2">
+              <button class="btn btn-secondary dropdown-toggle" type="button-2" id="dropdownMenuButton-2" data-bs-toggle="dropdown-2" aria-expanded="false">
+                Pokemon
+              </button>
+              <ul class="dropdown-menu-2" aria-labelledby="dropdownMenuButton-2" id="pokemon">
+              </ul>
+            </div>
+            
+            <br>
+
+            <div class="col-md-8">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Poke Dex</h5>
+                    </div>
+                    <img id="pokemon-image" src="" alt="" class="card-img-top w-25 m-auto">
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <h5 id="pokemon-name" class="card-subtitle text-muted"></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 id="pokemon-type" class="card-subtitle text-muted"></h5>
+                        </div>
+                    </div>
+
+                    <div id="pokemon-data" class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Stats -->
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">Stats</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Pokemon Stats -->
+                                        <span id="hp-stat" class="badge bg-info text-dark"></span>
+                                        <span id="attack-stat" class="badge bg-info text-dark"></span>
+                                        <span id="defense-stat" class="badge bg-info text-dark"></span>
+                                        <span id="special-attack-stat" class="badge bg-info text-dark"></span>
+                                        <span id="special-defense-stat" class="badge bg-info text-dark"></span>
+                                        <span id="speed-stat" class="badge bg-info text-dark"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">Abilities</div>
+                                    </div>
+                                    <div id="abilities" class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">Moves</div>
+                                    </div>
+                                    <div id="moves" class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <!-- JS -->
+        <script src="./script.js"></script>
+    </body>
+</html>
